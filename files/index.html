@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html id="convert">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>URL shortener for Scratch</title>
     <link href="./_files/style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="./gobo.ico">
+    <link rel="icon" href="./gobo.ico" />
   </head>
   <body onload="setup()">
     <div class="menu">
       <div class="menu-align-adjuster">
-        <img class="menu-img unselectable" src="./_files/goboWhite.png" alt="gobo">
+        <img
+          class="menu-img unselectable"
+          src="./_files/goboWhite.png"
+          alt="gobo"
+        />
         <a href="#" class="menu-item unselectable">Home</a>
         <a href="./about/" class="menu-item unselectable">About</a>
       </div>
@@ -21,26 +25,34 @@
         <div class="page-content" id="landingPage">
           <h1>gobo.cf</h1>
           <h2>
-	    URL shortener for <br/>
-	    Scratch projects, users, studios and discussions.
-	  </h2>
-          <a href="#convert" class="link-button unselectable">Shorten URL &emsp; &rarr;</a>
-	  <!-- <input type="checkbox" id="preview" onclick="updatePreview()"/>Preview links I click on<br/> -->
+            URL shortener for <br />
+            Scratch projects, users, studios and discussions.
+          </h2>
+          <a href="#convert" class="link-button unselectable"
+            >Shorten URL &emsp; &rarr;</a
+          >
+          <!--
+            <input type="checkbox" id="preview" onclick="updatePreview()"/>Preview links I click on<br/>
+          -->
         </div>
         <div class="page-content" id="fillinPage">
           <h2>Enter Url</h2>
-	  <form>
-            <input type="text" class="input-text-page" id="urlInput" name="long"/>
-	  </form>
+          <form>
+            <input
+              type="text"
+              class="input-text-page"
+              id="urlInput"
+              name="long"
+            />
+          </form>
           <div id="newUrlLabel">Shortened Url</div>
           <output id="shortUrlOutput" class="input-text-page"></output>
         </div>
       </div>
     </div>
 
+    <img class="background-gobo" src="./_files/gobo-color.svg" alt="gobo" />
 
-    <img class="background-gobo" src="./_files/gobo-color.svg" alt="gobo">
-
-    <img class="background-gobo" src="./_files/gobo-color.svg" alt="gobo">
+    <img class="background-gobo" src="./_files/gobo-color.svg" alt="gobo" />
   </body>
 </html>
