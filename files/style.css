@@ -255,6 +255,64 @@ select {
   background-color: #1694d3 !important;
 }
 
+/*checkbox styling*/
+.styled-checkbox-container {
+  position: fixed;
+  height: 26px;
+  left: 200px;
+  bottom: 0px;
+  font-family: helvetica neue, helvetica, Arial, sans-serif;
+  color: #fff;
+  display: block;
+  padding-left: 36px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  padding-top: 8px;
+  background-color: #25aff4;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.styled-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.styled-checkmark {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+.styled-checkbox-container .styled-checkmark.checked {
+  background-color: #fff;
+}
+.styled-checkmark:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+}
+.styled-checkbox-container .styled-checkmark.checked:after {
+  display: block;
+  background-color: #25aff4;
+}
+.styled-checkbox-container .styled-checkmark:after {
+  left: 5px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  transition: background-color 0.2s;
+}
+
 /*general setup*/
 .unselectable {
   -webkit-touch-callout: none;
