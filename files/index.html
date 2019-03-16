@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="convert">
+<html id="convert"><!-- for using the <html> as a target in css -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -46,7 +46,7 @@
             />
           </form>
           <div id="newUrlLabel">Shortened Url</div>
-          <output id="shortUrlOutput" class="input-text-page"></output>
+	  <input type="text" class="input-text-page" id="shortUrlOutput" readonly></input>
         </div>
       </div>
     </div>
@@ -60,15 +60,14 @@
         />
         <div class="bottom-button">
           <input
-            type="submit"
-            class="styled-checkmark {checked}"
-            value=""
-          /><!-- remove
-          --><input
-            type="submit"
-            class="text-button"
-            value="Preview links I click on"
-          />
+             type="submit"
+             class="styled-checkmark {checked}"
+             value=""
+             /><input
+		  type="submit"
+		  class="text-button"
+		  value="Preview links I click on"
+		  />
         </div>
       </label>
     </form>
