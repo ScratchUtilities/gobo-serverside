@@ -97,34 +97,34 @@ const base64 = {
 };
 
 function spawnUser(contents) {
-    var html = [];
-    var object;
-    var a;
-    var img;
-    var div;
-    for (i = 0; i < contents["content-order"].length; i++) {
-	if (contents["content-order"][i] === "br") {
-	    html.push("<br/>");
-	} else {
-	    object = contents["content"][contents["content-order"][i]];
-	    img =
-		'<img src="https://avatars3.githubusercontent.com/u/' +
-		object.userid +
-		'" class="contrib-user-pic' +
-		(object.team ? " contrib-user-pic-big" : "") +
-		'"/>';
-	    div = '<div class="contrib-user-name">' + object.username + "</div>";
-	    a =
-		'<a class="contrib-user" href="' +
-		object.link +
-		'">' +
-		img +
-		div +
-		"</a>";
-	    html.push(a);
-	}
+  var html = [];
+  var object;
+  var a;
+  var img;
+  var div;
+  for (i = 0; i < contents["content-order"].length; i++) {
+    if (contents["content-order"][i] === "br") {
+      html.push("<br/>");
+    } else {
+      object = contents["content"][contents["content-order"][i]];
+      img =
+        '<img src="https://avatars3.githubusercontent.com/u/' +
+        object.userid +
+        '" class="contrib-user-pic' +
+        (object.team ? " contrib-user-pic-big" : "") +
+        '"/>';
+      div = '<div class="contrib-user-name">' + object.username + "</div>";
+      a =
+        '<a class="contrib-user" href="' +
+        object.link +
+        '">' +
+        img +
+        div +
+        "</a>";
+      html.push(a);
     }
-    return html.join("");
+  }
+  return html.join("");
 }
 
 // Web server
