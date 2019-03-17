@@ -115,9 +115,9 @@ function spawnUser(contents) {
 		'"/>';
 	    div = '<div class="contrib-user-name">' + object.username + "</div>";
 	    a =
-		'<a class="contrib-user" href=' +
+		'<a class="contrib-user" href="' +
 		object.link +
-		">" +
+		'">' +
 		img +
 		div +
 		"</a>";
